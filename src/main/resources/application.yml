@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ppc?characterEncoding=UTF-8
+    data-username: root
+    password: 12345678
+
+# 日志记录
+logging:
+  config: classpath:logback.xml
+  path: ./conf/log
