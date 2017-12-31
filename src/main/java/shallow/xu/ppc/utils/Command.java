@@ -40,7 +40,7 @@ public class Command {
     }
 
     public static void main(String[] args) {
-        String commandStr = "ping 192.168.2.254";
+        String commandStr = "ping www.github.com";
         Command.exeCmd(commandStr);
     }
 }
