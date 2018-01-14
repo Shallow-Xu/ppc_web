@@ -3,7 +3,9 @@ package shallow.xu.ppc.page;
 import org.springframework.data.domain.PageRequest;
 
 /**
- * Created by liang.zhou on 2017/7/13.
+ *
+ * @author shallow
+ * @date 2017/7/13
  */
 public class PageParams {
     private Integer pageNum;

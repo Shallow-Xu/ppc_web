@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 import shallow.xu.ppc.database.ArticleRepository;
 import shallow.xu.ppc.database.entity.Article;
 
+/**
+ * @author shallow
+ */
 @Service
 public class TextService {
     @Autowired

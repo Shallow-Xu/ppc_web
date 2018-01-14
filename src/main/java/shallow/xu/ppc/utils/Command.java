@@ -1,8 +1,5 @@
 package shallow.xu.ppc.utils;
 
-/**
- * Created by Zhao.Xu on 2017/5/8.
- */
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +7,9 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * @author shallow
+ */
 public class Command {
     public static void exeCmd(String commandStr) {
         Logger logger = LoggerFactory.getLogger(Command.class);

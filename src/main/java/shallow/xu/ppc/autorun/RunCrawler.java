@@ -7,16 +7,19 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import shallow.xu.ppc.utils.Command;
 
+/**
+ * @author shallow
+ */
 @Configuration
 @EnableScheduling
 public class RunCrawler {
     private Logger logger = LoggerFactory.getLogger(RunCrawler.class);
 
+    @Scheduled(cron = "0 0 0/1 * * ? ")//  每隔一个小时执行(秒 分 时)
     /**
      * 抓取糗百热门文字
      * 每隔一个小时抓取一次
      */
-    @Scheduled(cron = "0 0 0/1 * * ? ")//  每隔一个小时执行(秒 分 时)
     public void crawlQiuBai() {
         logger.info("* * * * * * * * * * * * * * * * * * * *");
         logger.info("RunCrawler.crawlQiuBai 执行定时备份任务");

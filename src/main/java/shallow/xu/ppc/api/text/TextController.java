@@ -9,6 +9,9 @@ import shallow.xu.ppc.core.Result;
 import shallow.xu.ppc.core.ResultGenerator;
 import shallow.xu.ppc.page.PageParams;
 
+/**
+ * @author shallow
+ */
 @RestController
 @RequestMapping("/text")
 public class TextController {

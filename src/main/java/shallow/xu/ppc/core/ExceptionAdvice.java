@@ -9,7 +9,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * Created by shallow on 2017/11/12.
+ * @author shallow
+ * @date 2017/11/12
  */
 @ControllerAdvice
 public class ExceptionAdvice {
@@ -26,7 +27,8 @@ public class ExceptionAdvice {
     @ResponseBody
     public Result handException(HttpServletRequest request, Exception e) throws Exception {
         Result result = new Result();
-        if (e instanceof ServiceException) {//业务失败的异常，如“账号或密码错误”
+        if (e instanceof ServiceException) {
+            //业务失败的异常，如“账号或密码错误”
             result.setCode(ResultCode.FAIL).setMessage(e.getMessage());
         } else if (e instanceof NoHandlerFoundException) {
             result.setCode(ResultCode.NOT_FOUND).setMessage("接口 [" + request.getRequestURI() + "] 不存在");
